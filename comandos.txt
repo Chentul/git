@@ -4,12 +4,22 @@ git add <nombre_del_archivo>: agrega el archivo al stage.
 git add --all: agrega todos los archivos.
 
 git dif: muestra los cambios.
+git diff <commit1> <commit2>: muestra la diferencia de los cambios entre dos commits.
 git commit --amend: cambia el texto del commit anterior.
 
 git checkout -- <nombre_del_archivo>: revierte los cambios del archivo antes de mandarlo al stage.
 git reset HEAD <nombre_del_archivo>: elimina los cambios en el stage.
 
 git log --oneline: muestra todos los commit en una sola linea.
+git log --oneline --decorate: muestra (HEAD->branch).
 git reset <nombre_del_archivo>: elimina el contenido de un commit del stage.
-git reset --hard *<nombre_del_commit>: elimina el commit y hace HEAD un commit antes del commit borrado.
-git reset --soft <nombre_del_commit>: regresa al commit indicado y los commit posteriores pasan al stage..
+git reset --hard <nombre_del_commit>: posiciona el master/HEAD en el commit seleccionado.
+git reset --soft <nombre_del_commit>: regresa al commit indicado y los commit posteriores pasan al stage.
+
+HEAD~1: 1 commit antes que el HEAD
+HEAD~2: 2 commit antes que el HEAD
+
+git revert HEAD: revierte el ultimo commit.
+git revert --no-commit HEAD: revierte el ultimo commit.
+git revert --no-commit HEAD~1: revierte un commit anterior al head.
+git revert --continue: elimina todo lo queria sacar del stage.
