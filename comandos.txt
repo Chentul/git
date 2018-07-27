@@ -2,3 +2,6 @@ git init: inicializa git en el proyecto
 
 git add <nombre_del_archivo>: agrega el archivo
 git add --all: agrega todos los archivos
+
+git dif: muestra los cambios
+git commit --amend: cambia el texto del commit anterior.
