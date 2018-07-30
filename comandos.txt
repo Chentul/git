@@ -36,3 +36,6 @@ git branch -h
 .
 .
 .
+
+git tag v0.1.0: crea un tag en el commit actual
+git tag v0.2.0 373d39c: taggea un commit en especial
