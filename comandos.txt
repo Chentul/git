@@ -24,7 +24,15 @@ git revert --no-commit HEAD: revierte el ultimo commit.
 git revert --no-commit HEAD~1: revierte un commit anterior al head.
 git revert --continue: elimina todo lo queria sacar del stage.
 
-#crear shortcuts en git
+# CREAR SHORTCUTS EN GIT
 git config --global alias.<tu_alias_aqui>: comando a convertir en alias
 git config --global --get-regexp alias: obtiene una lista de todos los alias.
 git config --global --unset alias.<nombre_del_alias>: elimina el alias.
+
+# CONSULTAR LOS COMANDOS
+git add -h
+git commit -h
+git branch -h
+.
+.
+.
